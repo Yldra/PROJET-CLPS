@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1em;
+  background-color: #002d5c;
+}
+
+a {
+  color: #242424;
+  text-decoration: none;
+}
+
+em {
+  color: red;
+  font-size: 1.5em;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 3.5em;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  color: #f0f0f0;
+}
+
+p,
+li {
+  font-size: 1.1em;
+  color: #f9f8ff;
+}
+
+footer {
+  background-color: white;
+  padding: 20px 50px;
+}
+
+.cta {
+  display: inline-block;
+  background: linear-gradient(#B97D10, #FBCA03);
+  color: white;
+  border-radius: 50px;
+  padding: 20px 30px;
+}
+
+header a:hover {
+  text-decoration: underline;
+  color:red;
+}
+
+.cta:hover {
+  background: linear-gradient(#870000, #a5a5ab);
+  text-decoration: none;
+}
+
+.lien-icone {
+  margin-left: 30px;
+} /* A MODIFIER SUR TOUTES LES PAGES */
+
+.lien-icone:hover {
+  opacity: 0.5;
+}
+
+.fa-twitter:hover {
+  color: #00acee;
+}
+
+.fa-instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.fa-twitch:hover {
+  color:#6441A4;
+}
+
+.fa-youtube:hover {
+  color: #FF0000;
+}
+
+.fa-linkedin:hover {
+  color: #0A66C2;
+}
+
+.fa-facebook:hover {
+  color: #3b5998;
+}
+
+.fa-brands {
+    margin-left: 20px;
+  font-size: 3em;
+}
+
+section {
+  padding: 80px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 996px) {
+  footer {
+    padding: 20px 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  section {
+    padding: 50px 20px 50px 20px;
+  }
+}
+
+#copyright {
+  text-align: center;
+  color: black;
+}
+
+.brian {
+  box-shadow: 0 0 2px 2px black;
+}
+
+/* MENU DEROULANT NAVIGATION */
+
+:root{
+  --hauteur-menu: 80px;
+}
+
+nav{
+  width: 100%;
+  font-size: 18px;
+  position: sticky;
+  top: 0px;
+}
+
+nav>ul{
+  display: flex;
+  text-align: center;
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3);
+  height: var(--hauteur-menu);
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav>ul>li{
+  background-color: white;
+  position:relative;
+  height: 100%;
+  flex:1;
+}
+
+nav>ul>li>a{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+li a{
+  text-decoration: none;
+  color: black;
+}
+
+.menu-deroulant > a:after{
+  content:">";
+  font-size: 15px;
+  margin-left: 7px;
+  display: inline-block;
+}
+
+.sous-menu{
+  margin-top: var(--hauteur-menu);
+  width:100%;
+  text-align: left;
+  background-color: white;
+  border-radius: 2px;
+  overflow: hidden;
+  max-height: 0;
+}
+
+.sous-menu > li > a{
+  height: 50px;
+  padding-left: 20px;
+  width:100%;
+  align-items: center;
+  display: flex;
+}
+
+nav > ul > li:hover > a{
+  color: blue;
+}
+
+.sous-menu > li:hover{
+  background-color: rgba(33, 105, 236, 0.3);
+}
+
+.sous-menu > li:hover > a{
+  color: white;
+}
+
+@keyframes rotationFleche {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(90deg);
+  }
+}
+
+.menu-deroulant:hover > a:after{
+  animation: rotationFleche 0.2s linear forwards;
+}
+
+@keyframes apparitionSousMenu {
+  0%{
+    box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0);
+    border-top: 3px solid blue;
+  }
+  30%{
+    box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
+  }
+  100%{
+    max-height: 50em;
+    border-top: 3px solid blue;
+    box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.menu-deroulant:hover > .sous-menu{
+  animation: apparitionSousMenu 1s forwards;
+}
