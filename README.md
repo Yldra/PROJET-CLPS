@@ -1,39 +1,27 @@
-# Projets du Cours de Développement Web
+# Projet Prepa Avenir Adulte (CLPS de Lannion) - Conception d'un Site HTML/CSS
+# Effectué en Février/Mars 2023
 
-Bienvenue dans ce dépôt GitHub qui contient plusieurs projets du cours de Développement Web. Chaque dossier représente un projet distinct, et ce fichier README offre une vue d'ensemble de l'ensemble du travail réalisé.
+Bienvenue dans ce dépôt GitHub qui contient plusieurs projets en lien avec la Prepa Avenir Adulte. 
+Ayant à ce stade pour objectif de devenir Développeur Web, je me suis lancé le défi - et ai mis à profit le temps de cette "formation" - de créer un site pour le CLPS de Lannion.
+Ce fichier README offre une vue d'ensemble de l'ensemble du travail réalisé.
 
 ## Contenu du Dépôt
 
-1. **Projet 1 - Nom du Projet**
+1. **Projet 1 - CLPS VERSION 1**
 
    - Description succincte du premier projet.
    - Instructions d'utilisation ou de déploiement.
 
-2. **Projet 2 - Nom du Projet**
+2. **Projet 2 - CLPS VERSION 2**
 
    - Description succincte du deuxième projet.
    - Instructions d'utilisation ou de déploiement.
 
-3. **Etc.**
-
-## Comment Utiliser Ces Projets
-
-Chaque dossier de projet est autonome et comprend un ensemble de fichiers et de ressources nécessaires. Pour exécuter ou déployer un projet spécifique, suivez les instructions fournies dans le dossier correspondant.
+3. **RAPPORT DU STAGE D'IMMERSION - COM-WEB.bzh**
 
 ## Technologies Utilisées
 
-Les projets ont été développés en utilisant les dernières technologies disponibles. Voici quelques-unes des technologies principales utilisées dans ce cours :
+Les projets ont été développés en utilisant les dernières versions des technologies disponibles.
 
-- Langages de Programmation: HTML, CSS, JavaScript
-- Frameworks: [Nom du Framework utilisé, le cas échéant]
+- Langages de Programmation: HTML, CSS
 - Outils de Gestion de Version: Git, GitHub
-
-## Remarques Importantes
-
-Assurez-vous de consulter les fichiers README individuels dans chaque dossier de projet pour des informations spécifiques. N'hésitez pas à explorer, modifier et optimiser ces projets selon vos besoins.
-
----
-
-**Note**: Assurez-vous d'installer les dépendances nécessaires avant d'exécuter les projets. Consultez les instructions spécifiques dans chaque dossier pour plus de détails.
-
-Joyeux codage !
